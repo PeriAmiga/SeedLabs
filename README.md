@@ -1,89 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Labs in Ubuntu OS</title>
 </head>
 <body>
+    <h1>Security Labs in Ubuntu OS</h1>
 
-  <h1>Password Manager Application</h1>
+    <h2>Overview</h2>
+    <p>This repository contains documentation and solutions for a series of security labs conducted on Ubuntu operating system. The labs covered various topics including sniffing and spoofing, ARP attacks, IP attacks, local and remote DNS vulnerabilities, and manipulation of firewalls. Each lab aimed to provide hands-on experience with fundamental concepts in network security and system hardening.</p>
 
-  <p>This is a password manager application developed in Python. It allows users to securely store, manage, and organize their passwords.</p>
+    <h2>Labs Completed</h2>
+    <ol>
+        <li>
+            <h3>Sniffing and Spoofing</h3>
+            <p><strong>Description:</strong> This lab focused on understanding network traffic interception techniques through sniffing and spoofing.</p>
+            <p><strong>Tools Used:</strong> Wireshark, Scapy</p>
+            <p><strong>Learning Outcomes:</strong> Identification of network vulnerabilities, understanding of packet manipulation techniques.</p>
+        </li>
+        <li>
+            <h3>ARP Attacks</h3>
+            <p><strong>Description:</strong> This lab explored Address Resolution Protocol (ARP) vulnerabilities and techniques for ARP spoofing.</p>
+            <p><strong>Tools Used:</strong> arpspoof, ettercap</p>
+            <p><strong>Learning Outcomes:</strong> Understanding ARP poisoning, mitigation strategies for ARP attacks.</p>
+        </li>
+        <li>
+            <h3>IP Attacks</h3>
+            <p><strong>Description:</strong> This lab delved into various IP-based attacks such as IP spoofing, TCP hijacking, and ICMP attacks.</p>
+            <p><strong>Tools Used:</strong> hping3, netwox</p>
+            <p><strong>Learning Outcomes:</strong> Recognizing IP-based vulnerabilities, practical experience with network packet crafting.</p>
+        </li>
+        <li>
+            <h3>Local and Remote DNS</h3>
+            <p><strong>Description:</strong> This lab investigated DNS-related vulnerabilities both at local and remote levels, including cache poisoning and DNS tunneling.</p>
+            <p><strong>Tools Used:</strong> dnsspoof, dnscat2</p>
+            <p><strong>Learning Outcomes:</strong> Understanding DNS protocol weaknesses, implementing secure DNS configurations.</p>
+        </li>
+        <li>
+            <h3>Firewall Manipulation</h3>
+            <p><strong>Description:</strong> This lab focused on manipulating firewall rules to understand ingress and egress filtering, as well as bypassing firewall restrictions.</p>
+            <p><strong>Tools Used:</strong> iptables, nmap</p>
+            <p><strong>Learning Outcomes:</strong> Practical experience with firewall configurations, identification of firewall evasion techniques.</p>
+        </li>
+    </ol>
 
-  <img src="Password-Manager - Manager.png" alt="Password Manager Screenshot" style="display:block; margin:auto; max-width:100%;">
-
-  <h2>Instructions</h2>
-
-  <h3>Initial Setup</h3>
-
-  <ol>
-    <li><strong>Update Configuration:</strong> In the first run, you need to update the data in the <code>configuration.py</code> file according to your database configuration.</li>
-    <li><strong>Database Setup:</strong> Run the <code>dbCodeCreation.py</code> file to initialize the required database tables and configurations.</li>
-    <li><strong>Cryptography Setup:</strong> Run the <code>my_cryptography.py</code> file to set up encryption and decryption functionalities.</li>
-  </ol>
-
-  <h3>Running the Application</h3>
-
-  <p>After completing the initial setup steps:</p>
-
-  <ol>
-    <li>Run the <code>main.py</code> file to start the password manager application.</li>
-  </ol>
-
-  <h2>Features</h2>
-
-  <ul>
-    <li>Securely store, manage, and organize passwords.</li>
-    <li>Import passwords from CSV files, including CSV files exported from Google Password Manager.</li>
-    <li>Export passwords to CSV files compatible with Google Password Manager.</li>
-    <li>Generate random passwords.</li>
-    <li>Reset password via email.</li>
-    <li>Change password for added security.</li>
-    <li>Secure login and registration functionality.</li>
-    <li>Search passwords by application name or URL.</li>
-  </ul>
-
-  <h2>Dependencies</h2>
-
-  <ul>
-    <li>Python 3.x</li>
-    <li>MySQL database</li>
-  </ul>
-
-  <h2>Technologies and Libraries Used</h2>
-
-  <ul>
-    <li><strong>Python:</strong> Used as the primary programming language for development.</li>
-    <li><strong>Tkinter:</strong> Used for building the graphical user interface (GUI).</li>
-    <li><strong>Pandas:</strong> Used for data manipulation and CSV file handling.</li>
-    <li><strong>MySQL Connector:</strong> Used to connect and interact with the MySQL database.</li>
-    <li><strong>SMTPLib:</strong> Used for sending emails for password reset functionality.</li>
-    <li><strong>Hashlib:</strong> Used for hashing passwords.</li>
-    <li><strong>PBKDF2:</strong> Used for key derivation.</li>
-    <li><strong>Cryptography:</strong> Used for symmetric encryption and decryption.</li>
-  </ul>
-
-  <h2>Usage</h2>
-
-  <ol>
-    <li>Clone the repository:</li>
-  </ol>
-
-  <pre><code>git clone https://github.com/PeriAmiga/password-manager.git</code></pre>
-
-  <ol start="2">
-    <li>Navigate to the project directory:</li>
-  </ol>
-
-  <pre><code>cd password-manager</code></pre>
-
-  <ol start="3">
-    <li>Follow the initial setup instructions mentioned above.</li>
-    <li>Run the application:</li>
-  </ol>
-
-  <pre><code>python main.py</code></pre>
-
-
+    <h2>Usage</h2>
+    <p>Each lab folder contains detailed documentation, including setup instructions, lab objectives, and solutions. Follow the instructions provided in each lab's research file to reproduce the experiments and explore the associated security concepts.</p>
 </body>
 </html>
